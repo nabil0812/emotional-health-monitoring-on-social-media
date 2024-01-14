@@ -29,12 +29,12 @@ Depression, a prevalent mental disorder that extends beyond mere sadness, manife
 ## METHODOLOGY USED :
 
 
-### DATASETS :
+### Datasets :
 
 We require two datasets: one comprising tweets exhibiting depressive characteristics obtained through the X API, and the other consisting of arbitrary messages. The data mining process involved extracting over 10,000 tweets using the X API and the Tweepy library. The source data collected from X is available here, while arbitrary messages were obtained from Kaggle datarepository. The cleaned data-repository is utilized for training machine learning algorithms.
 
 
-### WORKFLOW :
+### Workflow :
 
 * Data Collection: Acquired a well-balanced dataset from both the Twitter API and the Kaggle dataset.
 * Data Preprocessing: Executed thorough data cleaning, exploration, processing, annotation, and analysis employing NLP libraries.
@@ -86,7 +86,7 @@ python predict.py <tweet.txt> SVM
   
 
 
-## References :
+## REFERENCES :
 
 * https://www.apa.org/topics/depression
 * https://www.kaggle.com/ywang311/twitter-sentiment/data
