@@ -9,8 +9,8 @@
 
 
 The evolution of internet and communication technologies, notably online social networks, has revolutionized electronic interactions and communication patterns. Platforms like Face-book, Twitter, Instagram, and similar ones not only serve as hosts for various forms of con-tent but also enable users to express their emotions and sentiments on various topics and issues. 
-On the one hand, this fosters open and unrestricted contributions and responses on social networking sites. On the other hand, it presents an opportunity for healthcare professionals to gain insights into the mental state of individuals based on their reactions to specific topics. 
 
+On the one hand, this fosters open and unrestricted contributions and responses on social networking sites. On the other hand, it presents an opportunity for healthcare professionals to gain insights into the mental state of individuals based on their reactions to specific topics. 
 
 
 
@@ -21,7 +21,6 @@ On the one hand, this fosters open and unrestricted contributions and responses 
 * Substantial datasets retrievable from social media platforms like Twitter hold the potential to furnish meaningful understanding of human actions and feelings. X, being one predominant platforms, serves as a common avenue for individuals to express their emotions and viewpoints, offering an opportunity to acquire a more profound comprehension of their psychological wellbeing everyday decision-making, and perceptions of life quality. 
 * Depression, a prevalent mental disorder, carries the risk of leading to severe consequences, including suicides.
 * This project's objective is to deploy supervised machine learning techniques for the identification of tweets exhibiting depressive traits.
-
 
 
 
