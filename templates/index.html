@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="title">Emotional Health Monitoring on Social Media</title>
+    <link rel="icon" href="" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="" href="" />
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <!-- <div class="sidenav">
+        <a href="https://www.psychiatry.org/patients-families/depression/what-is-depression">Depression?</a>
+        <a href="https://psychcentral.com/quizzes/depression-quiz">Test Yourself</a>
+        <a href="https://www.webmd.com/depression/features/natural-treatments">Treatment</a>
+        <a href="https://www.vandrevalafoundation.com/">Help!</a>
+    </div>
+
+    <div style="color:#ffffcc">
+        <form action="{{ url_for('predict')}}" method="post">
+
+            <h2>Emotional Health Monitoring on Social Media</h2>
+
+            <p> This Project helps you to find your mental health<br>
+                i.e, whether you are Depressed or Not Depressed.<br></p>
+            <br>------------------------------------------------<br>
+            <h2>Result:<br></h2>
+            <p>
+                If you are Depressed, it will show you-- 1<br>
+                If you are Not Depressed, it will show you-- 0<br>
+            </p>
+            <h3>Enter Your Text</h3>
+            <textarea cols="50" rows="10" type="text" name="mood_pred"></textarea>
+            <br><br><button class="button" type="submit ">DETECT</button>
+        </form>
+        <br><br>
+        <h3>{{ pred }}<h3>
+    </div>
+    <footer>
+        <p>© 2023-24 Sheikh Nabil, Aslam Khan, Tanu Patle, Vedant Raut</p>
+        <p><a href=""></a></p>
+    </footer> -->
+    <!-- <style>
+        .title {
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .txt {
+            width: 400px;
+            height: 125px;
+            border: 2px solid black;
+        }
+
+        body {
+            background-color: #74faff;
+            text-align: center;
+            padding: px;
+        }
+
+        h2 {
+            /* color: ; */
+            text-align: center;
+            color: black;
+        }
+
+        h3 {
+            /* color: ; */
+            text-align: center;
+            color: black;
+        }
+
+        p {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 20px;
+            color: black;
+        }
+
+        .button {
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 2px solid #000000;
+            transition-duration: 0.4s;
+        }
+
+        .button:hover {
+            background-color: #002233;
+            color: white;
+        }
+
+        .sidenav {
+
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #008CBA;
+            overflow-x: hidden;
+            padding-top: 30px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 10px 15px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #111;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            color: white;
+
+        }
+    </style> -->
+
+    <header>
+      <nav>
+        <img
+          src="{{url_for('static', filename='logo.png')}}"
+          width="135px"
+          height="32px"
+        />
+
+        <!-- <span class="">
+
+                <a href="/">Know More</a>
+            </span> -->
+      </nav>
+    </header>
+    <main>
+      <section class="section_A">
+        <div class="section_A_head">
+          <h1 class="heading">
+            Emotional Health Monitoring on <span> Social Media </span>
+          </h1>
+          <p>
+            Welcome to the Sentiment Analysis Bot, a powerful tool designed to
+            analyze the emotional tone of your Message! This innovative
+            application harnesses the capabilities of Machine Learning to
+            determine whether your message carries a positive or negative tone.
+          </p>
+          <div class="external_links">
+            <span>Know More:</span>
+            <ul>
+              <li>
+                <a
+                  href="https://www.psychiatry.org/patients-families/depression/what-is-depression"
+                  >Depression?</a
+                >
+              </li>
+              <li>
+                <a href="https://psychcentral.com/quizzes/depression-quiz"
+                  >Test Yourself</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.webmd.com/depression/features/natural-treatments"
+                  >Treatment</a
+                >
+              </li>
+              <li>
+                <a href="https://www.vandrevalafoundation.com/">Help</a>
+              </li>
+            </ul>
+          </div>
+          <ul>
+            How it Works:
+
+            <li>
+              Input Your Message: Simply enter your Message into the
+              application, and our advanced ML system will take care of the
+              rest.
+            </li>
+            <li>
+              Sentiment Analysis: The application employs state-of-the-art
+              natural language processing techniques to analyze the sentiment of
+              the provided text.
+            </li>
+            <li>
+              Real-time Feedback: Receive instant feedback on whether your
+              message conveys a positive or negative tone. The system will
+              provide valuable insights into the emotional content of your text.
+            </li>
+          </ul>
+          <!-- <div class="alert">
+            <span>
+              This Tool is for Human Psychological Research purpose.
+            </span>
+          </div> -->
+        </div>
+
+        <div class="name_plate">
+          <span
+            >© 2023-24 Sheikh Nabil, Aslam Khan, Tanu Patle, Vedant Raut</span
+          >
+        </div>
+      </section>
+      <section class="section_B">
+        <div class="section_B_header">
+          Kindly enter your text here:
+          <svg
+            style="transform: rotate(30deg) translate(20px)"
+            class=""
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="27"
+            viewBox="0 0 90 35"
+            fill="none"
+          >
+            <path
+              d="M1.96796 33.9719C3.80247 18.1196 17.7919 5.62913 33.348 3.72371C50.4444 1.62668 67.029 11.5719 76.981 24.9317L78.9843 22.3235L68.4063 20.8255C66.494 20.5549 65.2216 22.9171 67.0347 24.0794C71.9825 27.2595 77.6943 29.0461 83.5698 29.2517C83.9598 29.2488 84.3385 29.1195 84.649 28.8831C84.9595 28.6467 85.1852 28.3159 85.2922 27.9403C86.8482 21.853 88.3952 15.7632 89.9331 9.67114C90.4914 7.46655 87.0971 6.52495 86.5306 8.73002C84.9663 14.8148 83.4061 20.9008 81.8501 26.9882L83.572 25.6763C78.3273 25.4815 73.2333 23.8673 68.8314 21.0052L67.4598 24.2591L78.0412 25.7485C79.3501 25.9329 81.0925 24.5452 80.0445 23.1403C69.0822 8.45063 51.0208 -2.28729 32.2071 0.445181C15.7731 2.83182 0.512719 16.7279 0.219542 33.9734C0.199899 35.1271 1.84254 35.0654 1.96845 33.9743L1.96796 33.9719Z"
+              fill="#2e58ff"
+            />
+          </svg>
+        </div>
+        <div class="section_B_body">
+          <form class="form" action="{{ url_for('predict')}}" method="post">
+            <textarea
+              cols="50"
+              rows="8"
+              type="text"
+              name="mood_pred"
+            ></textarea>
+            <button class="button" type="submit ">Analyze</button>
+          </form>
+          <div class="Result_Card">
+            <div class="Result_Box_Main">
+              <span style="font-size: 20px">
+                <strong> </strong>
+              </span>
+
+              Analysis: {{ pred }}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-size: 38px;
+        line-height: 1.3;
+      }
+
+      p {
+        color: #171717;
+      }
+
+      .heading {
+        max-width: 700px;
+      }
+
+      .heading span {
+        background: linear-gradient(
+          70.36deg,
+          #833ab4 27%,
+          #c13584 45%,
+          #e1306c 70%,
+          #df6c51 97.92%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      header nav {
+        height: 59px;
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header nav span {
+      }
+
+      header nav span a {
+        color: white;
+        padding: 10px 16px;
+        background-color: black;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+
+      header {
+        background: #fff;
+        box-shadow: inset 0 -1px 0 0 #eaeaea;
+      }
+
+      main {
+        max-width: 1550px;
+        padding: 0 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .section_A {
+        width: 60%;
+        position: relative;
+        padding: 30px;
+        height: calc(100vh - 60px);
+      }
+
+      .section_A_head {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .section_A_head ul {
+        padding: 0 30px;
+      }
+
+      .section_B {
+        border-left: 1px solid #eaeaea;
+        width: 40%;
+        position: relative;
+        height: calc(100vh - 70px);
+        padding: 30px;
+      }
+
+      .name_plate {
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        width: 100%;
+        left: 0;
+        text-align: center;
+      }
+
+      .external_links ul {
+        display: flex;
+        margin-top: 10px;
+        flex-direction: row;
+        gap: 24px;
+      }
+
+      .external_links li {
+        list-style: none;
+      }
+
+      .external_links li a {
+        border: 1px solid #dfdfdf;
+        padding: 8px 16px;
+        border-radius: 8px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+
+      form {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      form textarea {
+        border-radius: 10px;
+        background-color: rgba(247, 247, 247, 0.538);
+        border: 1px solid rgb(211, 211, 211);
+        box-shadow: 0 8px 24px -8px #bdbdbd90, 0 1px 1px rgba(0, 0, 0, 0.04);
+        font-family: inherit;
+        padding: 20px;
+        font-size: 16px;
+      }
+
+      form button {
+        width: fit-content;
+        padding: 10px 20px;
+        border-radius: 7px;
+        border: none;
+        border: 1px solid #bdbdbd;
+        background-color: rgb(46, 88, 255);
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        box-shadow: 0 8px 24px -8px #bdbdbd90, 0 1px 1px rgba(0, 0, 0, 0.04);
+      }
+
+      .Result_Card {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 20px;
+      }
+
+      .Result_Box_Main {
+        background-color: white;
+        border-radius: 12px;
+        max-height: 380px;
+        width: 100%;
+        border: 1px solid #d1d1d1;
+        padding: 24px;
+      }
+
+      .alert {
+        padding: 10px 10px;
+        width: 100%;
+        background-color: rgb(179, 255, 180);
+        border-radius: 5px;
+        border: 1px solid #0071005c;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+      }
+
+      .alert span {
+        font-weight: 500;
+        color: rgb(20, 119, 20);
+      }
+    </style>
+  </body>
+</html>
