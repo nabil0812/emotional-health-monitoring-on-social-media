@@ -8,9 +8,9 @@
 ## INTRODUCTION :
 
 
-Social media platforms like Twitter, Instagram, and Facebook play significant roles in our daily lives, and their popularity has surged, particularly during the pandemic. Research indicates an increased likelihood of individuals sharing their emotions and thoughts on Twitter since the onset of the Covid-19 crisis. While positive emotions may not always correlate with higher life satisfaction, negative emotions are often seen as more authentic expressions of one's true feelings.
+The evolution of internet and communication technologies, notably online social networks, has revolutionized electronic interactions and communication patterns. Platforms like Face-book, Twitter, Instagram, and similar ones not only serve as hosts for various forms of con-tent but also enable users to express their emotions and sentiments on various topics and issues. 
+On the one hand, this fosters open and unrestricted contributions and responses on social networking sites. On the other hand, it presents an opportunity for healthcare professionals to gain insights into the mental state of individuals based on their reactions to specific topics. 
 
-Depression, a prevalent mental disorder that extends beyond mere sadness, manifests through various signs. These signs include a diminished interest in daily activities, notable changes in weight, disruptions in sleep patterns (either insomnia or excessive sleeping), fatigue, difficulty concentrating, feelings of worthlessness or excessive guilt, and in severe cases, recurrent thoughts of death or suicide. Fortunately, depression is a condition amenable to treatment. A combination of therapy and antidepressant medication is commonly employed to address this mental health issue.
 
 
 
@@ -18,10 +18,9 @@ Depression, a prevalent mental disorder that extends beyond mere sadness, manife
 ## AIMS & OBJECTIVES :
 
 
-* Extracting extensive datasets from social media channels like Twitter holds the potential to yield valuable insights into human behavior and emotions.
-* Twitter stands out as a prevalent platform for individuals to express their emotions and opinions, offering a rich source for gaining deeper insights into mental health, everyday decision-making, and perceptions related to quality of life.
-* Depression, a widespread mental disorder that can lead to severe consequences such as suicide, affects over 300 million people globally each year.
-* The objective of this project is to employ supervised machine learning techniques to identify tweets that exhibit characteristics indicative of depression.
+* Substantial datasets retrievable from social media platforms like Twitter hold the potential to furnish meaningful understanding of human actions and feelings. X, being one predominant platforms, serves as a common avenue for individuals to express their emotions and viewpoints, offering an opportunity to acquire a more profound comprehension of their psychological wellbeing everyday decision-making, and perceptions of life quality. 
+* Depression, a prevalent mental disorder, carries the risk of leading to severe consequences, including suicides.
+* This project's objective is to deploy supervised machine learning techniques for the identification of tweets exhibiting depressive traits.
 
 
 
