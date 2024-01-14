@@ -1,4 +1,4 @@
-![image](https://github.com/nabil0812/emotional-health-monitoring-on-social-media/assets/105557940/3f5fcb00-65ff-4516-9809-ce7219e8b716)# emotional-health-monitoring-on-social-media
+# Emotional Health Monitoring on Social Media
 
 
 ![Screenshot 2024-01-14 161854](https://github.com/nabil0812/emotional-health-monitoring-on-social-media/assets/105557940/b91ccde0-8661-47ec-b2f7-7421378b6a58)
