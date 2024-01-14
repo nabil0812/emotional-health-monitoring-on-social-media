@@ -63,19 +63,6 @@ python3 -m venv env
 source env/bin/activate
 ```
 
-* Clean the dataset
-
-```bash
-python clean.py <file_name> 
-```
-* Train the best model
-```bash
-python train.py <file_name> <model_name>
-```
-* Predict 
-```bash
-python predict.py <tweet.txt> SVM
-```
 * Run the Flask Application
 
 - Start flask web server: `python app.py`
