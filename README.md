@@ -37,7 +37,7 @@ We require two datasets: one comprising tweets exhibiting depressive characteris
 * Data Collection: Acquired a well-balanced dataset from both the Twitter API and the Kaggle dataset.
 * Data Preprocessing: Executed thorough data cleaning, exploration, processing, annotation, and analysis employing NLP libraries.
 * EDA and Feature Selection: Utilized techniques like Count Vectorizer, TF-IDF, and spaCy word embedding model for exploratory data analysis and feature selection.
-* Model Selection: Opted for a diverse set of models, including Logistic Regression, Support Vector Machine (SVM), K-Nearest Neighbors (k-NN), Decision Tree Classifier, Random Forest Classifier, Neural Network, LSTM, and Naïve Bayes.
+* Model Selection: Opted for Logistic Regression machine learning algorithm
 * Model Training: Applied the Scikit-Learn library for training the selected models.
 * Inference: Assessed model performance using metrics like F1-Score, Confusion Matrix, and ROC-AUC to derive meaningful insights.
 * Data Product: Formulated a Flask-based web application for efficient deployment and interaction with the trained models.
